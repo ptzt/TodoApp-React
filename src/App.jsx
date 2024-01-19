@@ -1,6 +1,11 @@
 // src/App.js
 import React, { useState } from 'react';
 import TodoList from './components/TodoList';
+import './index.css'
+
+//Preguntar nombre al usuario la primera vez que entra
+const user = 'Tomas'
+
 
 function App() {
   const [todos, setTodos] = useState([
@@ -31,6 +36,7 @@ function App() {
   return (
     <div>
       <h1>Todo App</h1>
+      <h2>Hola! {user}</h2>
       <input
         type="text"
         value={newTodo}

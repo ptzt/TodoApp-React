@@ -9,7 +9,7 @@ const TodoItem = ({ todo, onToggleComplete, onDelete }) => {
             <span style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
                 {todo.text}
             </span>
-            <button onClick={() => onDelete(todo.id)}>Eliminar</button>
+            <button onClick={() => onDelete(todo.id)} >Eliminar</button>
         </div>
     )
 }
